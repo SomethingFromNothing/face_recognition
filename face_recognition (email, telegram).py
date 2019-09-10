@@ -13,7 +13,6 @@ token = 'you token'
 bot = telebot.TeleBot(token);
 chat_id = ##
 
-
 def telegramsendEmailf():
     
     global path
