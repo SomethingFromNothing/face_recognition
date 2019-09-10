@@ -28,15 +28,12 @@ def telegramsendEmailn():
     #photo = open('photo.jpg', 'rb')
     bot.send_photo(chat_id, photo, caption = "WARNING!")
 
-    
-
 sender_email = "sender email"      
 receiver_email = "receiver email"
 password = "pass"
 
 messagef = MIMEMultipart()  # create message with found person
 messagen = MIMEMultipart()  # create message with not found person
-
 
 path = ".."                #global patch
 countPhotof = 0;            # photo FOUND counter (5 photo for message)
@@ -59,8 +56,7 @@ def foundsendEmail():      #function send message for Found face
     messagef["Subject"] = subject
 
     # Add body to email
-    messagef.attach(MIMEText(body))
-    
+    messagef.attach(MIMEText(body))  
     
     global path
     filephoto = path # In same directory as script
@@ -120,8 +116,7 @@ def notfoundsendEmail():          #function send message for NOT found face
     messagen["Subject"] = subject
 
     # Add body to email
-    messagen.attach(MIMEText(body))
-    
+    messagen.attach(MIMEText(body))   
     
     global path
     filephoto = path # In same directory as script
@@ -268,7 +263,6 @@ while True:
                 else:
                     facedetectcounter += 1      #increment
                             
-
     else:
         if framecounter==100:           #frames between face detection
             messageSend = False         # start next detection
