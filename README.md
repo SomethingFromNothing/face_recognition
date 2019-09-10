@@ -1,4 +1,4 @@
-# face_recognition
+# Face Recognition
 
 Face recognition consists of three parts:
 - data collection;
