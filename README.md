@@ -17,7 +17,7 @@ When you need photos of the homeowner or proxies, a face-to-face script is execu
 If Id 1 requests, the camera will start. Now you need to point the camera at the owner's face. The script will only be shot when the face is recognized. To improve the quality of machine learning and recognition, it is recommended to tilt the head in different directions so that the face shots can be taken from different angles.
 As soon as 100 pictures are taken, the script will be released and the camera will be stopped. Looking at the dataSet folder on the Raspberry Pi, you can now find 100 images that were taken from the script.
 
-<img src="https://raw.githubusercontent.com/SomethingFromNothing/face_recognition/master/images/1.png" width="550">
+<img src="https://raw.githubusercontent.com/SomethingFromNothing/face_recognition/master/images/3.png" width="550">
 
 
 
