@@ -30,3 +30,22 @@ This step is easy to set up. The machine learning script must be executed and th
 ## Face recognition
 Generally, the script first detects faces from the video stream just like a dataset generator script. When a face is detected, it will compare it to a trained set of data created using the previous scenario. The OpenCV algorithm will then give you a level of confidence as to how well it recognizes your face. Based on the confidence level, a rectangle with the name of the recognized face will be drawn on the frame.
 The script imports the necessary libraries, this time OpenCV and OS access libraries. In the initialization phase, the first two different OpenCV objects are created. One is again a detector that uses a default cascade file to detect faces, the other is an empty LBPH face recognition object to which training data from previous ones will be submitted. 
+
+To get a realistic approach, the camera will be installed in a location where it will always have a door in view. With this approach, everyone who enters the room will be forced to be in the video stream, so it will be recognized in any case.
+
+<img src="https://raw.githubusercontent.com/SomethingFromNothing/face_recognition/master/images/6.jpg" width="350">
+
+Finally, it is time to execute the face recognition script. The script first connects to the Telegram bot. The mail data is then configured and a message is generated. Then, depending on the recognized face, the results are sent.
+
+### Case One: The homeowner enters
+When the homeowner enters the room, the video shows that he has been recognized, and the script thus sends a message containing the recognized person to the Telegram and to Email. The message contains text indicating that the person is in compliance with the database.
+
+<img src="https://raw.githubusercontent.com/SomethingFromNothing/face_recognition/master/images/7.png" width="400">
+<img src="https://raw.githubusercontent.com/SomethingFromNothing/face_recognition/master/images/8.png" width="400">
+
+### Case Two: Unknown person
+In this case, an unregistered person enters the room. Thus, the system will identify the recognized face as "Unknown" and send a message containing "WARNING" to the Telegram and to the Email.
+The photo on the mail has the name of the person identified and the time taken.
+
+<img src="https://raw.githubusercontent.com/SomethingFromNothing/face_recognition/master/images/9.png" width="400">
+<img src="https://raw.githubusercontent.com/SomethingFromNothing/face_recognition/master/images/10.png" width="400">
