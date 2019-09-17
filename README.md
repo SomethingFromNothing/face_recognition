@@ -40,12 +40,12 @@ Finally, it is time to execute the face recognition script. The script first con
 ### Case One: The homeowner enters
 When the homeowner enters the room, the video shows that he has been recognized, and the script thus sends a message containing the recognized person to the Telegram and to Email. The message contains text indicating that the person is in compliance with the database.
 
-<img src="https://raw.githubusercontent.com/SomethingFromNothing/face_recognition/master/images/7.png" width="400">
+<img src="https://raw.githubusercontent.com/SomethingFromNothing/face_recognition/master/images/7.png" width="600">
 <img src="https://raw.githubusercontent.com/SomethingFromNothing/face_recognition/master/images/8.png" width="400">
 
 ### Case Two: Unknown person
 In this case, an unregistered person enters the room. Thus, the system will identify the recognized face as "Unknown" and send a message containing "WARNING" to the Telegram and to the Email.
 The photo on the mail has the name of the person identified and the time taken.
 
-<img src="https://raw.githubusercontent.com/SomethingFromNothing/face_recognition/master/images/9.png" width="400">
+<img src="https://raw.githubusercontent.com/SomethingFromNothing/face_recognition/master/images/9.png" width="600">
 <img src="https://raw.githubusercontent.com/SomethingFromNothing/face_recognition/master/images/10.png" width="400">
