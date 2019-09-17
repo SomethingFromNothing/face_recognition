@@ -19,11 +19,13 @@ As soon as 100 pictures are taken, the script will be released and the camera wi
 
 <img src="https://raw.githubusercontent.com/SomethingFromNothing/face_recognition/master/images/3.png" width="550">
 
-
-
-
 ## Machine learning
 At the machine learning stage, a training file is created that contains LBPH face information. Based on this file, the algorithm at the recognition stage will decide whether or not the person is in the video stream. The images have to be converted to uint8 and all added to a single face recognition array to create a training file, so careful pre-processing is required.
+
+This step is easy to set up. The machine learning script must be executed and the program will do the rest. Checking the trainer folder will show that it now contains a histogram prepared with images that were taken earlier.
+
+<img src="https://raw.githubusercontent.com/SomethingFromNothing/face_recognition/master/images/4.png" width="550">
+<img src="https://raw.githubusercontent.com/SomethingFromNothing/face_recognition/master/images/5.png" width="550">
 
 ## Face recognition
 Generally, the script first detects faces from the video stream just like a dataset generator script. When a face is detected, it will compare it to a trained set of data created using the previous scenario. The OpenCV algorithm will then give you a level of confidence as to how well it recognizes your face. Based on the confidence level, a rectangle with the name of the recognized face will be drawn on the frame.
