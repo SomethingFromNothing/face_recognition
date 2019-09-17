@@ -10,6 +10,19 @@ The data collection phase is used to create a data set that is structured in par
 The script works as an automatic program for taking photos. It starts the camera, determines if a face is found in the camera stream, and, if so, saves the image to disk at the same time.
 The script uses the OpenCV face detection algorithm using the default classifier, which is a given OpenCV dataset with thousands of faces. It is used to detect the face of an image, in this example it is a frame from a video stream.
 
+When you need photos of the homeowner or proxies, a face-to-face script is executed. At run time, you need to specify the ID of the Id used to index the person from whom the images were taken. If this is the second person to be added to the system, an ID with number 2 must be provided. The results shown will start with an unconfigured system, so "1" will be entered.
+
+![Example output](./images/2.png)
+
+If Id 1 requests, the camera will start. Now you need to point the camera at the owner's face. The script will only be shot when the face is recognized. To improve the quality of machine learning and recognition, it is recommended to tilt the head in different directions so that the face shots can be taken from different angles.
+As soon as 100 pictures are taken, the script will be released and the camera will be stopped. Looking at the dataSet folder on the Raspberry Pi, you can now find 100 images that were taken from the script.
+
+![Example output](./images/1.png)
+
+
+
+
+
 ## Machine learning
 At the machine learning stage, a training file is created that contains LBPH face information. Based on this file, the algorithm at the recognition stage will decide whether or not the person is in the video stream. The images have to be converted to uint8 and all added to a single face recognition array to create a training file, so careful pre-processing is required.
 
