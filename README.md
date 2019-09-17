@@ -1,4 +1,4 @@
-# Face Recognition
+# Face Recognition (Raspberry Pi)
 
 #### Face recognition consists of three parts:
 - data collection;
